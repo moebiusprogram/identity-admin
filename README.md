@@ -1,6 +1,6 @@
-# CurrencyUp - CryptoCurrency Exchange 
+# CurrencyUp - KYC System 
 
-KYC System - Admin panel
+Admin panel
 
 This is the admin panel frontend of the KYC product. To run, make sure you follow the setup instructions identity-be (the backend server) and identity-fe (the frontend server). Additionally, you should make sure to follow the integration flow from whatever ICO dashboard solution you use. You can run this in demo mode to view as a standalone and see if it works for you to evaluate it.
 
