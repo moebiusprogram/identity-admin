@@ -5,7 +5,7 @@
 /dist-server
 /tmp
 /out-tsc
-
+yarn.lock
 # dependencies
 /node_modules
 /build
