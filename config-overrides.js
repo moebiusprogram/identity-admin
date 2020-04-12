@@ -8,11 +8,8 @@ const rewireLess = require('react-app-rewire-less');
 module.exports = function override(config, env) {
   config = rewireLess(config, env);
   config.output.publicPath = "/admin"
-  /**
-    * Remove minify plugin for production build
-  */
-  if (env === 'production') {
-    config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== 'UglifyJsPlugin');
-  }
+  
+  config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== 'UglifyJsPlugin');
+ 
   return config;
 }
