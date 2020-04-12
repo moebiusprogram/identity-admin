@@ -1,10 +1,12 @@
-# MouseKYC Admin Panel
+#CurrencyUp - CryptoCurrency Exchange 
 
-This is the admin panel frontend of the MouseKYC product. To run, make sure you follow the setup instructions mousekyc-be (the backend server) and mousekyc-fe (the frontend server). Additionally, you should make sure to follow the integration flow from whatever ICO dashboard solution you use. You can run this in demo mode to view as a standalone and see if it works for you to evaluate it.
+KYC System - Admin panel
+
+This is the admin panel frontend of the KYC product. To run, make sure you follow the setup instructions identity-be (the backend server) and identity-fe (the frontend server). Additionally, you should make sure to follow the integration flow from whatever ICO dashboard solution you use. You can run this in demo mode to view as a standalone and see if it works for you to evaluate it.
 
 #### Installation For Production
 
-To generate a production build of the MouseKYC admin panel, run the following commands:
+To generate a production build of the KYC System admin panel, run the following commands:
 
 ```
 npm install
