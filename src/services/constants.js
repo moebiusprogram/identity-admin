@@ -1,1 +1,1 @@
-export const apiEndpoint = 'https://mousekyc-server.mousebelt.com';
+export const apiEndpoint = 'https://identity.currencyup.com/api/v1';
