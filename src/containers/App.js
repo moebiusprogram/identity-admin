@@ -8,12 +8,13 @@ import PageNotFound from 'components/PageNotFound/PageNotFound';
 import SignInContainer from 'containers/SignInContainer/SignInContainer';
 import SignUpContainer from 'containers/SignUpContainer/SignUpContainer';
 import { createBrowserHistory } from 'history';
-const history = createBrowserHistory();
-
 import 'assets/styles/App.less';
+
+
 
 class App extends Component {
   render() {
+    const history = createBrowserHistory();
     return (
       <Provider store={store}>
         <Router basename={"/admin"} history={history}>
