@@ -79,6 +79,7 @@ class SignInContainer extends PureComponent {
               <Row className="sign_logo_area">
                 <Col span={14} offset={5}>
                   <img alt="true" src={logo} className="logo"/>
+                  <h2>Know Your Customer Control Panel</h2>
                 </Col>
               </Row>  
               {/* <Row className="sign_logo_area">
