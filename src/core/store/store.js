@@ -8,12 +8,13 @@ import {loadState, saveState} from "../../services/localStorage";
 import rootReducer from './reducers';
 import {throttle} from "lodash";
 
+
 const persistedState = loadState();
 const sagaMiddleware = createSagaMiddleware();
 
 const middlewares = [
   thunk,
-  sagaMiddleware  
+  sagaMiddleware
 ];
 
 if (process.env.NODE_ENV === 'development') {

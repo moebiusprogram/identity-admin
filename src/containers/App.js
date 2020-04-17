@@ -7,6 +7,8 @@ import PrivateRoute from '../components/PrivateRoute/PrivateRoute';
 import PageNotFound from 'components/PageNotFound/PageNotFound';
 import SignInContainer from 'containers/SignInContainer/SignInContainer';
 import SignUpContainer from 'containers/SignUpContainer/SignUpContainer';
+import { createBrowserHistory } from 'history';
+const history = createBrowserHistory();
 
 import 'assets/styles/App.less';
 
@@ -14,14 +16,14 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router basename={"/admin"}>
+        <Router basename={"/admin"} history={history}>
           <div className="App">
             <div className="content">
               <Switch>
                 <Route path="/signin" exact component={SignInContainer}/>
                 <Route exact path="/signup" component={SignUpContainer}/>
                 <Route exact path="/404" component={PageNotFound}/>
-                <PrivateRoute path="/" component={RoutesContainer}/>
+                <Route path="/" component={RoutesContainer}/>
               </Switch>
             </div>
           </div>
